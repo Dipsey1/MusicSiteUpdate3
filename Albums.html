@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div
+      id="navaheder"
+      style="
+        margin-bottom: 20px;
+        width: 100%;
+        height: 100px;
+        background-color: #fff;
+      "
+    >
+      <h2 id="logoo">POWER.MUSIC & MIXTAPES</h2>
+      <ul id="Nav_menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="Random.html">Random</a></li>
+        <li><a href="Albums.html">Albums</a></li>
+        <li><a href="HipHopNews.html">HipHopNews</a></li>
+        <li><a href="8DMusic.html">8DMusic</a></li>
+      </ul>
+    </div>
+    <h1>Music Albums</h1>
+
+    <table id="musicTable">
+      <tr>
+        <th>Songs</th>
+        <th>Artist</th>
+        <th>Album</th>
+        <th>year</th>
+        <th>#</th>
+      </tr>
+      <tr class="tablRow">
+        <td>Real one</td>
+        <td>Beyonce-ftJayZ</td>
+        <td>Issa Album</td>
+        <td>2018</td>
+        <td>
+          <img
+            src="play.png"
+            width="30px"
+            height="30px"
+            onclick="play('Beyonce-ftJayZ/AUD-20180704-WA0009.mp3')"
+            class="button"
+          />
+          <img
+            src="stop.png"
+            width="30px"
+            height="30px"
+            onclick="stop()"
+            class="button"
+          />
+        </td>
+      </tr>
+      <tr class="tablRow">
+        <td>Anything</td>
+        <td>Beyonce-ftJayZ</td>
+        <td>Random</td>
+        <td>2018</td>
+        <td>
+          <img
+            src="play.png"
+            width="30px"
+            height="30px"
+            onclick="play('Beyonce-ftJayZ/AUD-20180704-WA0003.mp3')"
+            class="button"
+          />
+          <img
+            src="stop.png"
+            width="30px"
+            height="30px"
+            onclick="stop()"
+            class="button"
+          />
+        </td>
+      </tr>
+      <tr class="tablRow">
+        <td>love in summer time</td>
+        <td>Beyonce-ftJayZ</td>
+        <td>Random</td>
+        <td>2018</td>
+        <td>
+          <img
+            src="play.png"
+            width="30px"
+            height="30px"
+            onclick="play('Beyonce-ftJayZ/AUD-20180704-WA0002.mp3')"
+            class="button"
+          />
+          <img
+            src="stop.png"
+            width="30px"
+            height="30px"
+            onclick="stop()"
+            class="button"
+          />
+        </td>
+      </tr>
+      <tr class="tablRow">
+        <td>America</td>
+        <td>Beyonce-ftJayZ</td>
+        <td>Random</td>
+        <td>2018</td>
+        <td>
+          <img
+            src="play.png"
+            width="30px"
+            height="30px"
+            onclick="play('Beyonce-ftJayZ/AUD-20180704-WA0018.mp3')"
+            class="button"
+          />
+          <img
+            src="stop.png"
+            width="30px"
+            height="30px"
+            onclick="stop()"
+            class="button"
+          />
+        </td>
+      </tr>
+      <tr class="tablRow">
+        <td>Guess</td>
+        <td>Beyonce-ftJayZ</td>
+        <td>Random</td>
+        <td>2018</td>
+        <td>
+          <img
+            src="play.png"
+            width="30px"
+            height="30px"
+            onclick="play('Beyonce-ftJayZ/AUD-20180704-WA0004.mp3')"
+            class="button"
+          />
+          <img
+            src="stop.png"
+            width="30px"
+            height="30px"
+            onclick="stop()"
+            class="button"
+          />
+        </td>
+      </tr>
+      <tr class="tablRow">
+        <td>Still</td>
+        <td>Beyonce-ftJayZ</td>
+        <td>Random</td>
+        <td>2018</td>
+        <td>
+          <img
+            src="play.png"
+            width="30px"
+            height="30px"
+            onclick="play('Beyonce-ftJayZ/AUD-20180704-WA0005.mp3')"
+            class="button"
+          />
+          <img
+            src="stop.png"
+            width="30px"
+            height="30px"
+            onclick="stop()"
+            class="button"
+          />
+        </td>
+      </tr>
+      <tr class="tablRow">
+        <td>Apeshit</td>
+        <td>Beyonce-ftJayZ</td>
+        <td>Random</td>
+        <td>2018</td>
+        <td>
+          <img
+            src="play.png"
+            width="30px"
+            height="30px"
+            onclick="play('Beyonce-ftJayZ/AUD-20180704-WA0016.mp3')"
+            class="button"
+          />
+          <img
+            src="stop.png"
+            width="30px"
+            height="30px"
+            onclick="stop()"
+            class="button"
+          />
+        </td>
+      </tr>
+    </table>
+
+    <div id="now_playing" onclick="playAndPause()"></div>
+    <audio id="MusicPlayer" controls>
+      <source
+        id="song"
+        src="/musicFiles/pills_automobiles_official_video_mp3_54438.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+    <script type="text/javaScript" src="/music.js"></script>
+
+    <footer>
+      <p>Free Thinkers</p>
+      <p>
+        Common sense gets a lot of credit that belongs to cold feet. Arthur
+        Godfrey.
+      </p>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/yung_sofly_doperdibz/"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href=""><i class="fab fa-youtube"></i></a>
+        <a href="www.linkedin.com/in/abdoulie-dibbasey-71965b175"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+      </div>
+      <p class="Copyright">Copyright by DevDibbasey</p>
+    </footer>
+
+    <div class="a-social-b">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/yung_sofly_doperdibz/"
+        ><i class="fab fa-instagram"></i
+      ></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.linkedin.com/in/abdoulie-dibbasey-71965b175"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+    </div>
+  </body>
+</html>

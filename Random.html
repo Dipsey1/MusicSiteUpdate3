@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random</title>
+    <link href="style.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div
+      id="navaheder"
+      style="
+        margin-bottom: 20px;
+        width: 100%;
+        height: 100px;
+        background-color: #fff;
+      "
+    >
+      <h2 id="logoo">POWER.MUSIC & MIXTAPES</h2>
+      <ul id="Nav_menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="Random.html">Random</a></li>
+        <li><a href="Albums.html">Albums</a></li>
+        <li><a href="HipHopNews.html">HipHopNews</a></li>
+        <li><a href="8DMusic.html">8DMusic</a></li>
+      </ul>
+    </div>
+    <h1>Random Songs</h1>
+    <p id="pcenter">Random music Songs</p>
+    <table id="musicTable">
+      <tr>
+        <th>Songs</th>
+        <th>Artist</th>
+        <th>Album</th>
+        <th>year</th>
+        <th>#</th>
+      </tr>
+      <tr class="tablRow">
+        <td>Blessed</td>
+        <td>Ace-Hood</td>
+        <td>Trust-The-Process</td>
+        <td>2018</td>
+        <td>
+          <img
+            src="play.png"
+            width="30px"
+            height="30px"
+            onclick="play('/Ace-Hood-Trust-The-Process/07. Blessed.mp3')"
+            class="button"
+          />
+          <img
+            src="stop.png"
+            width="30px"
+            height="30px"
+            onclick="stop()"
+            class="button"
+          />
+        </td>
+      </tr>
+      <tr class="tablRow">
+        <td>The Bottom</td>
+        <td>Ace-Hood</td>
+        <td>Trust-The-Process</td>
+        <td>2018</td>
+        <td>
+          <img
+            src="play.png"
+            width="30px"
+            height="30px"
+            onclick="play('Ace-Hood-Trust-The-Process/04. The Bottom.mp3')"
+            class="button"
+          />
+          <img
+            src="stop.png"
+            width="30px"
+            height="30px"
+            onclick="stop()"
+            class="button"
+          />
+        </td>
+      </tr>
+      <tr class="tablRow">
+        <td>Play To Win</td>
+        <td>Ace-Hood</td>
+        <td>Trust-The-Process</td>
+        <td>2018</td>
+        <td>
+          <img
+            src="play.png"
+            width="30px"
+            height="30px"
+            onclick="play('Ace-Hood-Trust-The-Process/02. Play To Win.mp3')"
+            class="button"
+          />
+          <img
+            src="stop.png"
+            width="30px"
+            height="30px"
+            onclick="stop()"
+            class="button"
+          />
+        </td>
+      </tr>
+      <tr class="tablRow">
+        <td>Passion</td>
+        <td>Ace-Hood</td>
+        <td>Trust-The-Process</td>
+        <td>2018</td>
+        <td>
+          <img
+            src="play.png"
+            width="30px"
+            height="30px"
+            onclick="play('Ace-Hood-Trust-The-Process/11. Passion.mp3')"
+            class="button"
+          />
+          <img
+            src="stop.png"
+            width="30px"
+            height="30px"
+            onclick="stop()"
+            class="button"
+          />
+        </td>
+      </tr>
+      <tr class="tablRow">
+        <td>Top</td>
+        <td>Ace-Hood</td>
+        <td>Trust-The-Process</td>
+        <td>2018</td>
+        <td>
+          <img
+            src="play.png"
+            width="30px"
+            height="30px"
+            onclick="play('Ace-Hood-Trust-The-Process/08. Top.mp3')"
+            class="button"
+          />
+          <img
+            src="stop.png"
+            width="30px"
+            height="30px"
+            onclick="stop()"
+            class="button"
+          />
+        </td>
+      </tr>
+      <tr class="tablRow">
+        <td>Who Do You Love</td>
+        <td>YG</td>
+        <td>Blame it on the street</td>
+        <td>2018</td>
+        <td>
+          <img
+            src="play.png"
+            width="30px"
+            height="30px"
+            onclick="play('musicFiles/yg_who_do_you_love__explicit_ft._drake_mp3_54376.mp3')"
+            class="button"
+          />
+          <img
+            src="stop.png"
+            width="30px"
+            height="30px"
+            onclick="stop()"
+            class="button"
+          />
+        </td>
+      </tr>
+    </table>
+
+    <div id="now_playing" onclick="playAndPause()"></div>
+    <audio id="MusicPlayer" controls>
+      <source
+        id="song"
+        src="/musicFiles/pills_automobiles_official_video_mp3_54438.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <script type="text/javaScript" src="/music.js"></script>
+
+    <div id="main">
+      <div class="music">
+        <a href="/Albums.html"
+          ><img src="images/yg.jpg" alt="" width="200" height="180" id="yg"
+        /></a>
+
+        <p>
+          Blame it on the street<br />YG <br />
+          2019
+        </p>
+      </div>
+
+      <div class="music">
+        <a href="/Albums.html">
+          <img
+            src="images/kendrick-damn.jpeg"
+            alt=""
+            width="200"
+            height="180"
+            id="kendrick"
+            onclick="playAndPause('musicFiles/kendrick_lamar_humble._mp3_69212.mp3')"
+        /></a>
+        <p>
+          Humble<br />kendrick_lamar <br />
+          2019
+        </p>
+      </div>
+
+      <div class="music">
+        <a href="/Albums.html">
+          <img
+            src="images/tyga.jpeg"
+            alt=""
+            width="200"
+            height="180"
+            id="tyga.jpeg"
+            onclick="playAndPause('musicFiles/tyga_yg_santana_mamacita_official_video_mp3_54012.mp3')"
+        /></a>
+        <p>
+          mamacita<br />
+          tyga_yg_santana<br />
+          2019
+        </p>
+      </div>
+
+      <div class="music">
+        <a href="/Albums.html">
+          <img
+            src="images/tory-lanez.jpg"
+            alt=""
+            width="200"
+            height="180"
+            id="tory-lanez.jpg"
+            onclick="playAndPause('musicFiles/tory_lanez_and_t-pain_jerry_sprunger_official_music_video_mp3_68156.mp3')"
+        /></a>
+        <p>
+          jerry_sprunger_official<br />tory_lanez <br />
+          2019
+        </p>
+      </div>
+
+      <div class="music">
+        <a href="/Albums.html">
+          <img
+            src="images/travis-scott.jpg"
+            alt=""
+            width="200"
+            height="180"
+            id="travis-scott.jpg"
+            onclick="playAndPause('musicFiles/travis_scott_highest_in_the_room_mp3_68096.mp3')"
+        /></a>
+        <p>
+          highest_in_the_room<br />travis_scott <br />
+          2019
+        </p>
+      </div>
+
+      <div class="music">
+        <a href="/Albums.html">
+          <img
+            src="images/theWeekend.jpg"
+            alt=""
+            width="200"
+            height="180"
+            id="theWeekend.jpg"
+            onclick="playAndPause('musicFiles/the_weeknd_starboy_ft._daft_punk_mp3_54530.mp3')"
+        /></a>
+        <p>
+          starboy<br />theWeekend <br />
+          2019
+        </p>
+      </div>
+
+      <div class="music">
+        <a href="/Albums.html">
+          <img
+            src="images/chris-brown.jpg"
+            alt=""
+            width="200"
+            height="180"
+            id="chris-brown.jpg"
+            onclick="playAndPause('musicFiles/pills_automobiles_official_video_mp3_54438.mp3')"
+        /></a>
+        <p>
+          pills_automobiles<br />chris-brown <br />
+          2019
+        </p>
+      </div>
+
+      <div class="music">
+        <a href="/Albums.html">
+          <img
+            src="images/wiz-khalifa.jpeg"
+            alt=""
+            width="200"
+            height="180"
+            id="wiz-khalifa.jpg"
+            onclick="playAndPause('musicFiles/wiz_khalifa_bammer_official_audio_mp3_68062.mp3')"
+        /></a>
+        <p>
+          Bammer<br />wiz_khalifa <br />
+          2019
+        </p>
+      </div>
+
+      <div class="music">
+        <a href="/Albums.html">
+          <img
+            src="images/nav-badhabits.jpg"
+            alt=""
+            width="200"
+            height="180"
+            id="nav-badhabits.jpg"
+            onclick="playAndPause('musicFiles/nav_habits_official_audio_mp3_54467.mp3')"
+        /></a>
+        <p>
+          Habits_official<br />Nav <br />
+          2019
+        </p>
+      </div>
+
+      <div class="music">
+        <a href="/Albums.html">
+          <img
+            src="images/shek-wes.jpeg"
+            alt=""
+            width="200"
+            height="180"
+            id="shek-wes.jpg"
+            onclick="playAndPause('musicFiles/sheck_wes_mo_bamba_mp3_54492.mp3')"
+        /></a>
+        <p>
+          mo_bamba<br />sheck_wes <br />
+          2019
+        </p>
+      </div>
+
+      <div class="music">
+        <a href="/Albums.html">
+          <img
+            src="images/popcaan.jpg"
+            alt=""
+            width="200"
+            height="180"
+            id="popcaan.jpg"
+            onclick="playAndPause('musicFiles/davido_risky_official_video_ft._popcaan_mp3_68031.mp3')"
+        /></a>
+        <p>
+          risky_official<br />davido ft popcaan <br />
+          2019
+        </p>
+      </div>
+
+      <div class="music">
+        <a href="/Albums.html">
+          <img
+            src="images/j.cole-kod.jpg"
+            alt=""
+            width="200"
+            height="180"
+            id="j.cole-kod.jpg"
+            onclick="playAndPause('musicFiles/j._cole_wet_dreamz_mp3_68587.mp3')"
+        /></a>
+        <p>
+          K.O.D<br />j.cole <br />
+          2019
+        </p>
+      </div>
+
+  <!--     <div class="music">
+        <a href="/August Alsina Testimony[Deluxe Version]/">
+          <img
+            src="/images/ALSIN-lonely.jpg"
+            alt=""
+            width="200"
+            height="180"
+            id="j.cole-kod.jpg"
+            onclick="playAndPause('/August Alsina Testimony[Deluxe Version]')"
+        /></a>
+        <p>
+          Testimony[Deluxe Version]<br />August Alsina <br />
+          2019
+        </p>
+      </div>
+
+      <div class="music">
+        <a href="/Ace-Hood-Trust-The-Process">
+          <img
+            src="/images/Acehood.jpg"
+            alt=""
+            width="200"
+            height="180"
+            id="j.cole-kod.jpg"
+            onclick="playAndPause('/Ace-Hood-Trust-The-Process')"
+        /></a>
+        <p>
+          Trust-The-Process<br />Acehood <br />
+          2019
+        </p>
+      </div> -->
+    </div>
+
+    <div id="now_playing" onclick="playAndPause()"></div>
+
+    <footer>
+      <p>Free Thinkers</p>
+      <p>
+        Common sense gets a lot of credit that belongs to cold feet. Arthur
+        Godfrey.
+      </p>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/yung_sofly_doperdibz/"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href=""><i class="fab fa-youtube"></i></a>
+        <a href="www.linkedin.com/in/abdoulie-dibbasey-71965b175"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+      </div>
+      <p class="Copyright">Copyright by DevDibbasey</p>
+    </footer>
+
+    <div class="a-social-b">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/yung_sofly_doperdibz/"
+        ><i class="fab fa-instagram"></i
+      ></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.linkedin.com/in/abdoulie-dibbasey-71965b175"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+    </div>
+  </body>
+</html>
